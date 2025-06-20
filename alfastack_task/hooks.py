@@ -20,6 +20,12 @@ fixtures = [{
 				"doctype": "Server Script"
 			}
 	]
+
+# doc_events = {
+#     "Service Booking": {
+#         "on_update": "alfastack_task.alfastack_task.doctype.service_booking.service_booking.send_to_webhook"
+#     }
+# }
 # Apps
 # ------------------
 
