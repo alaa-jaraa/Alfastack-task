@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-20 18:01:51.669763",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "service_type",
+  "preferred_datetime"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Select",
+   "label": "Service Type",
+   "options": "\nTherapy\nSpa\nOthers"
+  },
+  {
+   "fieldname": "preferred_datetime",
+   "fieldtype": "Datetime",
+   "label": "Preferred Date/Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 18:03:49.289187",
+ "modified_by": "Administrator",
+ "module": "Alfastack Task",
+ "name": "Service Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
