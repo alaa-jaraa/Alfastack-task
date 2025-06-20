@@ -1,39 +1,75 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-06-20 18:01:51.669763",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "customer_name",
   "service_type",
-  "preferred_datetime"
+  "preferred_datetime",
+  "amended_from",
+  "status"
  ],
  "fields": [
   {
    "fieldname": "customer_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Customer Name",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "service_type",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Service Type",
    "options": "\nTherapy\nSpa\nOthers"
   },
   {
    "fieldname": "preferred_datetime",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Preferred Date/Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Service Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Requested\nApproved\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SB-"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-06-20 18:03:49.289187",
+ "modified": "2025-06-20 23:51:51.034177",
  "modified_by": "Administrator",
  "module": "Alfastack Task",
  "name": "Service Booking",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,7 +85,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "customer_name"
 }

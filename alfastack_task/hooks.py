@@ -5,6 +5,21 @@ app_description = "alfastack task"
 app_email = "alaajarah1@gmail.com"
 app_license = "mit"
 
+
+
+fixtures = [{
+                "doctype": "Workflow"
+            },
+			{
+				"doctype": "Workflow State"
+			},
+			{
+				"doctype": "Workflow Action Master"
+			},
+			{
+				"doctype": "Server Script"
+			}
+	]
 # Apps
 # ------------------
 
@@ -27,7 +42,6 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/alfastack_task/css/alfastack_task.css"
 # app_include_js = "/assets/alfastack_task/js/alfastack_task.js"
-
 # include js, css files in header of web template
 # web_include_css = "/assets/alfastack_task/css/alfastack_task.css"
 # web_include_js = "/assets/alfastack_task/js/alfastack_task.js"

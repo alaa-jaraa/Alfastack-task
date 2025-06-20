@@ -7,3 +7,7 @@ from frappe.model.document import Document
 
 class ServiceBooking(Document):
 	pass
+
+
+# /api/resource/Service%20Booking?fields=["*"]
+# GET /api/resource/Service%20Booking?fields=["*"]
